@@ -4,65 +4,66 @@
     <title>My Website</title>
     <style>
         body {
-            background-image: url('https://images.unsplash.com/photo-1533035336122-4327d347d2fe?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhaW58ZW58MHx8MHx8fDA%3D');
+            background-image: url('https://wallpaperaccess.com/full/1737995.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             padding: 0;
             margin: 0; /* Remove default margin */
         }
-        .form-container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 5px;
-            max-width: 400px;
-            margin: 50px auto;
+ 
+        .center-image {
+            text-align: center;
+            margin-top: 0; /* Align the image at the top */
         }
-        input[type="text"], input[type="number"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
+ 
+        .container {
+            height: 7vh; /* Use viewport height to make it full height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; /* Align items at the bottom */
         }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
+ 
+        .btn-container {
+            margin-top: 20px; /* Adjust the margin as needed */
+            display: flex;
+            gap: 20px; /* Add gap between buttons */
+        }
+ 
+        /* Add the following style for the button */
+        button {
+            background-color: blue; /* Set the button background color to blue */
+            color: white; /* Set the text color to white */
+            padding: 15px 30px; /* Increase the padding for a larger button */
+            font-size: 16px; /* Increase the font size */
+            border: none; /* Remove default button border */
             cursor: pointer;
-            width: 100%;
         }
-        input[type="submit"]:hover {
-            opacity: 0.8;
+ 
+        /* Add style for the anchor tag */
+        a {
+            text-decoration: none; /* Remove underline for the anchor tag */
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <form action="/submit_order" method="post" onsubmit="redirectToPage()">
-            <label for="mobilenumber">Mobile Number</label>
-            <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number" required>
- 
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="Enter address" required>
- 
-            <label for="quantity">Quantity</label>
-            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity in kgs" required>
- 
-            <label for="pickuptime">Time of Pickup</label>
-            <input type="text" id="pickuptime" name="pickuptime" placeholder="Enter pickup time" required>
- 
-            <input type="submit" value="Submit Order" method="post" onsubmit="redirectToPage()">
-        </form>
+<div class="center-image">
+    <img src="file:///C:/Users/HP/Desktop/var1-removebg-preview.png" width="800" height="600" alt="Centered Image">
+</div>
+<div class="container">
+    <div class="btn-container">
+        <button onclick="redirectToDonate()" style="width: 400px;">DONATE</button>
+        <button onclick="redirectToRequest()" style="width: 400px;">REQUEST</button>
     </div>
+</div>
+<script>
+    function redirectToDonate() {
+        window.location.href = "file:///C:/Users/HP/Desktop/2web.html"; // Redirect to the specified URL
+    }
  
-    <script>
-        function redirectToPage() {
-            // Redirect to the specified URL
-            window.location.href = "file:///C:/Users/HP/Desktop/3web.html";
-            return false; // Prevent the form from actually submitting
-        }
-    </script>
+    function redirectToRequest() {
+        window.location.href = "file:///C:/Users/HP/Desktop/request.html"; // Replace with your desired URL
+    }
+</script>
 </body>
 </html>
- 
