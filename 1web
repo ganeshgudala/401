@@ -58,11 +58,11 @@
 </div>
 <script>
     function redirectToDonate() {
-        window.location.href = "file:///C:/Users/HP/Desktop/2web.html"; // Redirect to the specified URL
+        href = "2web"; // Redirect to the specified URL
     }
  
     function redirectToRequest() {
-        window.location.href = "file:///C:/Users/HP/Desktop/request.html"; // Replace with your desired URL
+        href = "3web"; // Replace with your desired URL
     }
 </script>
 </body>
