@@ -59,7 +59,7 @@
     <script>
         function redirectToPage() {
             // Redirect to the specified URL
-            window.location.href = "file:///C:/Users/HP/Desktop/3web.html";
+            window.location.href = "3web";
             return false; // Prevent the form from actually submitting
         }
     </script>
